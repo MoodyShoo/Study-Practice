@@ -25,7 +25,7 @@ namespace Task_01
 
         static bool CheckOneMove(string coordsRook, string coordsFigure)
         {
-            return coordsRook[0] == coordsFigure[0] || coordsRook[1] == coordsFigure[1];
+            return (coordsRook[0] == coordsFigure[0]) || (coordsRook[1] == coordsFigure[1]);
         }
 
         static void Main(string[] args)
