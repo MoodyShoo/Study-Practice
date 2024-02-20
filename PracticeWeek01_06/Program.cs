@@ -125,9 +125,20 @@ namespace Task_06
                 }
 
                 ++tact;
-                --cooldown;
-                --playerCooldown;
-                --bossCooldown;
+
+                if (cooldown > 0)
+                {
+                    --cooldown;
+                }
+                if (playerCooldown > 0)
+                {
+                    --playerCooldown;
+                }
+                if (bossCooldown > 0)
+                {
+                    --bossCooldown;
+                }
+
                 Console.WriteLine();
                 if (playerCooldown <= 0)
                 {
