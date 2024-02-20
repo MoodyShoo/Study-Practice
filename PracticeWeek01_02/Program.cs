@@ -8,7 +8,7 @@
 
 using System.IO;
 
-namespace Task_01
+namespace Task_02
 {
     class Program
     {
@@ -23,13 +23,14 @@ namespace Task_01
                    (coords[1] >= '1' && coords[1] <= '8');
         }
 
-        static bool CheckOneMove(string coordsRook, string coordsFigure)
+        static bool CheckOneMove(string coordsBishop, string coordsFigure)
         {
-            return (Math.Abs(coordsRook[0] - coordsFigure[0])) == Math.Abs(coordsRook[1] - coordsFigure[1]);
+            return (Math.Abs(coordsBishop[0] - coordsFigure[0])) == Math.Abs(coordsBishop[1] - coordsFigure[1]);
         }
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите координаты слона x1, y1, и координаты фигуры x2, y2");
             string? input = Console.ReadLine()?.ToLower();
 
 
@@ -38,13 +39,13 @@ namespace Task_01
                 string[] inputParts = input.Split(' ');
                 if (inputParts.Length == 2)
                 {
-                    string coordsRook = inputParts[0];
+                    string coordsBishop = inputParts[0];
                     string coordsFigure = inputParts[1];
 
-                    if (CheckCoords(coordsRook) && CheckCoords(coordsFigure))
+                    if (CheckCoords(coordsBishop) && CheckCoords(coordsFigure))
                     {
 
-                        if (CheckOneMove(coordsRook, coordsFigure))
+                        if (CheckOneMove(coordsBishop, coordsFigure))
                         {
                             Console.WriteLine("Слон сможет побить фигуру");
                         }
