@@ -10,23 +10,23 @@ namespace Task_06
 {
     class Player
     {
-        public int hp { get; set; }
-        public int maxHp = 500;
-        public bool def = false;
+        public int Hp { get; set; }
+        public int MaxHp = 500;
+        public bool Def = false;
         public Player(int hp)
         {
-            this.hp = hp;
+            this.Hp = hp;
         }
 
         public void Heal(int heal)
         {
-            if (hp >= maxHp || hp + heal >= maxHp)
+            if (Hp >= MaxHp || Hp + heal >= MaxHp)
             {
-                hp = maxHp;
+                Hp = MaxHp;
             } 
             else
             {
-                hp += heal;
+                Hp += heal;
                 
             }
             Console.WriteLine($"Игрок использовал Лечебный ветер, восстановив своё здоровье на {heal}.");
@@ -37,7 +37,7 @@ namespace Task_06
         }
         public void Defense()
         {
-            def = true;
+            Def = true;
             Console.WriteLine("Игрок использовал Защитное парирование.");
         }
         public void Necro(Boss boss, Random rnd)
@@ -46,11 +46,11 @@ namespace Task_06
             boss.ReciveDamage(rnd.Next(10, 51));
             boss.ReciveDamage(rnd.Next(10, 51));
             boss.ReciveDamage(rnd.Next(10, 51));
-            hp -= 20;
+            Hp -= 20;
         }
         public void ReciveDamage(int damage)
         {
-            hp -= damage;
+            Hp -= damage;
             Console.WriteLine($"Босс атакует игрока на {damage} ед. урона.");
         }
     }

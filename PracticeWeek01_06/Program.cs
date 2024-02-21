@@ -52,11 +52,11 @@ namespace Task_06
             int playerCooldown = 0;
             int cooldown = 0;
             
-            while (player.hp > 0 && boss.hp > 0)
+            while (player.Hp > 0 && boss.Hp > 0)
             {
                 Console.WriteLine($"Игровой такт № - {tact}");
-                Console.WriteLine($"Осталось здоровья у игрока - {player.hp} HP\n" +
-                                  $"Осталось здоровья у босса - {boss.hp} HP");
+                Console.WriteLine($"Осталось здоровья у игрока - {player.Hp} HP\n" +
+                                  $"Осталось здоровья у босса - {boss.Hp} HP");
 
                 if (PlayerMove)
                 {
@@ -98,7 +98,7 @@ namespace Task_06
                 if (!PlayerMove && cooldown <= 0)
                 {
                     Console.WriteLine("Атакаует босс");
-                    if (boss.hp <= 30 && boss.hp > 0 && bossCooldown == 0)
+                    if (boss.Hp <= 30 && boss.Hp > 0 && bossCooldown == 0)
                     {
                         boss.Heal(120);
                         bossCooldown = 3;
@@ -110,14 +110,14 @@ namespace Task_06
 
                 }
 
-                if (player.hp <= 0)
+                if (player.Hp <= 0)
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("У вас закончились HP. Вы прогирали!");
                     Console.ResetColor();
                 }
 
-                if (boss.hp <= 0)
+                if (boss.Hp <= 0)
                 {
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("У босса не осталось HP. Вы выиграли!");

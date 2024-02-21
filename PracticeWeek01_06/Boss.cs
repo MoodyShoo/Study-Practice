@@ -8,17 +8,17 @@ namespace Task_06
 {
     class Boss
     {
-        public int hp {  get; set; }
-        public int maxHp = 800;
+        public int Hp {  get; set; }
+        public int MaxHp = 800;
 
         public Boss(int hp)
         {
-            this.hp = hp;
+            this.Hp = hp;
         }
 
         public void Attack(Player player, int damage)
         {
-            if (!player.def)
+            if (!player.Def)
             {
                 player.ReciveDamage(damage);
             } 
@@ -27,19 +27,19 @@ namespace Task_06
                 damage = damage - damage * (damage / 100);
                 player.ReciveDamage(damage);
                 ReciveDamage(10);
-                player.def = false;
+                player.Def = false;
             }
         }
 
         public void Heal(int points)
         {
-            hp += points;
+            Hp += points;
             Console.WriteLine($"Босс использовал лечение на {points} HP.");
         }
 
         public void ReciveDamage(int damage)
         {
-            hp -= damage;
+            Hp -= damage;
             Console.WriteLine($"Игрок атакует босса на {damage} ед. урона.");
         }
     }
