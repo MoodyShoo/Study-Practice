@@ -25,19 +25,23 @@ namespace Task_09
             int dy = Math.Abs(targetY - whiteFigureY);
 
             // Проверяем, что черная фигура не может атаковать белую
-            if (blackFigure != "ладья" && (blackFigureX == targetX || blackFigureY == targetY))
+            if (blackFigure == "ладья" && (blackFigureX == targetX || blackFigureY == targetY))
             {
                 return false;
             }
-            else if (blackFigure != "слон" && (dx == dy))
+            else if (blackFigure == "слон" && (dx == dy))
             {
                 return false;
             }
-            else if (blackFigure != "ферзь" && (dx == dy || whiteFigureX == targetX || whiteFigureY == targetY))
+            else if (blackFigure == "ферзь" && (dx == dy || whiteFigureX == targetX || whiteFigureY == targetY))
             {
                 return false;
             }
-            else if (blackFigure != "конь" && (dx == 2 && dy == 1 || dx == 1 && dy == 2))
+            else if (blackFigure == "конь" && (dx == 2 && dy == 1 || dx == 1 && dy == 2))
+            {
+                return false;
+            }
+            else if (blackFigure == "король" && (dx <= 1 && dy <= 1))
             {
                 return false;
             }
