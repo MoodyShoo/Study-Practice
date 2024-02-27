@@ -330,6 +330,7 @@ namespace PracticeWeek02_12
                     }
                 }
             }
+            HighlightDuplicates();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
