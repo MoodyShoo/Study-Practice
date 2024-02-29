@@ -7,9 +7,23 @@ using System.Windows.Forms;
 
 namespace PracticeWeek02_14
 {
-    class SquareCells: Button
+    public enum CellStatus
+    {
+        Healthy,
+        Infected,
+        Immune
+    }
+
+    public class SquareCells : Button
     {
         public int X;
         public int Y;
+        public CellStatus status;
+        public int immunityCount; // Счетчик иммунитета
+
+        public SquareCells()
+        {
+            status = CellStatus.Healthy;
+        }
     }
 }
