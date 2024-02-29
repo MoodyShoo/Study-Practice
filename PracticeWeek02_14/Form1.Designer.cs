@@ -33,11 +33,11 @@
             this.numericUpDownSquareSize = new System.Windows.Forms.NumericUpDown();
             this.labelSquare = new System.Windows.Forms.Label();
             this.createButton = new System.Windows.Forms.Button();
-            this.numericUpDownTimeInterval = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownInterval = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSquareSize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTimeInterval)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -88,12 +88,12 @@
             this.createButton.UseVisualStyleBackColor = true;
             this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
-            // numericUpDownTimeInterval
+            // numericUpDownInterval
             // 
-            this.numericUpDownTimeInterval.Location = new System.Drawing.Point(500, 78);
-            this.numericUpDownTimeInterval.Name = "numericUpDownTimeInterval";
-            this.numericUpDownTimeInterval.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDownTimeInterval.TabIndex = 4;
+            this.numericUpDownInterval.Location = new System.Drawing.Point(500, 78);
+            this.numericUpDownInterval.Name = "numericUpDownInterval";
+            this.numericUpDownInterval.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDownInterval.TabIndex = 4;
             // 
             // label1
             // 
@@ -104,13 +104,17 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Временной интервал";
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 427);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.numericUpDownTimeInterval);
+            this.Controls.Add(this.numericUpDownInterval);
             this.Controls.Add(this.createButton);
             this.Controls.Add(this.labelSquare);
             this.Controls.Add(this.numericUpDownSquareSize);
@@ -118,7 +122,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSquareSize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTimeInterval)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,7 +134,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDownSquareSize;
         private System.Windows.Forms.Label labelSquare;
         private System.Windows.Forms.Button createButton;
-        private System.Windows.Forms.NumericUpDown numericUpDownTimeInterval;
+        private System.Windows.Forms.NumericUpDown numericUpDownInterval;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
     }
