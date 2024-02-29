@@ -54,7 +54,7 @@ namespace PracticeWeek02_14
                     timer1.Interval = 1000 * Convert.ToInt32(numericUpDownInterval.Value);
                 } else
                 {
-                    timer1.Interval= 1000;
+                    timer1.Interval = interval;
                 }
                 
                 timer1.Start(); 

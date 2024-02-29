@@ -21,7 +21,6 @@ namespace PracticeWeek02_13
         {
             InitializeComponent();
             DrawCross();
-            Check();
         }
 
         GameTiles[,] tiles = new GameTiles[7,7];
@@ -42,20 +41,6 @@ namespace PracticeWeek02_13
                         tiles[i, j].X = i;
                         tiles[i, j].Y = j;
                         panel1.Controls.Add(tiles[i, j]);
-                    }
-                }
-            }
-        }
-
-        private void Check()
-        {
-            for (int i = 0; i < 7; i++)
-            {
-                for (int j = 0; j < 7; j++)
-                {
-                    if (tiles[i, j] != null)
-                    {
-                        tiles[i, j].Text = $"{i},{j}";
                     }
                 }
             }
