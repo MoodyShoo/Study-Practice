@@ -4,7 +4,7 @@ using System.Windows.Forms;
 
 namespace PracticeWeek02_14
 {
-    public partial class Form1 : Form
+    public partial class InfectionSimulation : Form
     {
         private SquareCells[,] cells; 
         private int gridSize; 
@@ -13,7 +13,7 @@ namespace PracticeWeek02_14
         private Random random = new Random(); 
         private int interval = 1000; 
 
-        public Form1()
+        public InfectionSimulation()
         {
             InitializeComponent();
             timer1.Interval = interval; 

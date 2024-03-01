@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PracticeWeek02_14
+namespace PracticeWeek02_15
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace PracticeWeek02_14
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InfectionSimulation());
+            Application.Run(new Form1());
         }
     }
 }

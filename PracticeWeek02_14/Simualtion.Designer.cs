@@ -1,6 +1,6 @@
 ﻿namespace PracticeWeek02_14
 {
-    partial class Form1
+    partial class InfectionSimulation
     {
         /// <summary>
         /// Required designer variable.
@@ -108,7 +108,7 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Form1
+            // InfectionSimulation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,8 +119,8 @@
             this.Controls.Add(this.labelSquare);
             this.Controls.Add(this.numericUpDownSquareSize);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "InfectionSimulation";
+            this.Text = "Симуляция инфекции";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSquareSize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownInterval)).EndInit();
             this.ResumeLayout(false);

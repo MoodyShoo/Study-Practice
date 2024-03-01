@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{93C977DF-F8D7-4625-8DFC-9BDF58D80BD2}</ProjectGuid>
+    <ProjectGuid>{33955157-ABF9-4D59-9170-93687AFD7E90}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>PracticeWeek02_14</RootNamespace>
-    <AssemblyName>PracticeWeek02_14</AssemblyName>
+    <RootNamespace>PracticeWeek02_15</RootNamespace>
+    <AssemblyName>PracticeWeek02_15</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,17 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Simualtion.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Simualtion.Designer.cs">
-      <DependentUpon>Simualtion.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Simualtion.resx">
-      <DependentUpon>Simualtion.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
