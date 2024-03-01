@@ -11,14 +11,14 @@ using System.Windows.Forms;
 
 namespace PracticeWeek02_12
 {
-    public partial class Form1 : Form
+    public partial class Sudoku : Form
     {
         private const string FilePath = "savedSudoku.txt";
-        public Form1()
+        public Sudoku()
         {
             InitializeComponent();
             createCells();
-            this.FormClosing += Form1_FormClosing;
+            this.FormClosing += Sudoku_FormClosing;
             LoadSavedCellValuesFromFile();
         }
 
@@ -333,7 +333,7 @@ namespace PracticeWeek02_12
             HighlightDuplicates();
         }
 
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void Sudoku_FormClosing(object sender, FormClosingEventArgs e)
         {
             SaveCellValuesToFile();
         }

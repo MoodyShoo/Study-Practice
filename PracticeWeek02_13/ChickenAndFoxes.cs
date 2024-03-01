@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace PracticeWeek02_13
 {
-    public partial class Form1 : Form
+    public partial class ChickenAndFoxes : Form
     {
         const int buttonSize = 40;
         const int crossWidth = 7;
         const int crossHeight = 7;
         const int centerSize = 3;
 
-        public Form1()
+        public ChickenAndFoxes()
         {
             InitializeComponent();
             DrawCross();

@@ -1,6 +1,6 @@
 ﻿namespace PracticeWeek02_12
 {
-    partial class Form1
+    partial class Sudoku
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             // 
             // newGameButton
             // 
-            this.newGameButton.Location = new System.Drawing.Point(471, 12);
+            this.newGameButton.Location = new System.Drawing.Point(442, 12);
             this.newGameButton.Name = "newGameButton";
             this.newGameButton.Size = new System.Drawing.Size(113, 57);
             this.newGameButton.TabIndex = 0;
@@ -52,7 +52,7 @@
             // 
             // checkButton
             // 
-            this.checkButton.Location = new System.Drawing.Point(471, 75);
+            this.checkButton.Location = new System.Drawing.Point(442, 75);
             this.checkButton.Name = "checkButton";
             this.checkButton.Size = new System.Drawing.Size(113, 61);
             this.checkButton.TabIndex = 2;
@@ -60,16 +60,16 @@
             this.checkButton.UseVisualStyleBackColor = true;
             this.checkButton.Click += new System.EventHandler(this.checkButton_Click);
             // 
-            // Form1
+            // Sudoku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 420);
+            this.ClientSize = new System.Drawing.Size(573, 420);
             this.Controls.Add(this.checkButton);
             this.Controls.Add(this.panelSudoku);
             this.Controls.Add(this.newGameButton);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Sudoku";
+            this.Text = "Судоку";
             this.ResumeLayout(false);
 
         }
